@@ -37,17 +37,36 @@ body {font-family:tahoma; background-color:#3a3a3a; color:#e0e0e0; font-size: 18
   padding: 0px 30px;
 }
 
+.article {
+  text-indent: 120px;
+}
+
 .topster {
   width: 256px;
   height: 256px;
   float: right;
-  margin-right: 150px;
+  margin-right: 200px;
 }
 
-@media only screen and (max-width: 650px) {
-  .topster {width: 256px; height: 256px; float: left}
+@media only screen and (max-width: 1275px) {
+  .article {text-indent: 60px;}
 }
 
+@media only screen and (max-width: 1125px) {
+  .article {text-indent: 0px; clear: both;}
+}
+
+@media only screen and (max-width: 1125px) {
+  .topster {width: 256px; height: 256px; float: left; margin-left: 300px;}
+}
+
+@media only screen and (max-width: 925px) {
+  .topster {width: 256px; height: 256px; float: left; margin-left: 100px;}
+}
+
+@media only screen and (max-width: 625px) {
+  .topster {width: 256px; height: 256px; float: left; margin-left: 0px;}
+}
 
 </style>
 </head>
@@ -64,16 +83,19 @@ I began diving into music and listening to albums from front-to-back in 2017, an
 </p>
 <br>
 <a href="favalbums.html" title="Favorite Albums">
-<img src="collage.jpg" alt="Favorite Albums" class="topster">
+<img src="collage.jpg" alt="Favorite Albums" class="topster" vspace="25px">
 </a>
-<p style="text-indent:200px">	
-Article #2
+<br>
+<br>
+<br>
+<p class="article">	
+David Bowie Best to Worst
 </p>
-<p style="text-indent:200px">	
-Article #2
+<p class="article">	
+The Beatles Best to Worst
 </p>
-<p style="text-indent:200px">	
-Article #2
+<p class="article">	
+Ambient 4: On Land - My Favorite Ambient Album
 </p>
 
 </div>
